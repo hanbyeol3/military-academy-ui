@@ -1,10 +1,9 @@
 import React, { useState, useEffect } from 'react';
-import { ChevronLeft, ChevronRight } from 'lucide-react';
 import './Home.css';
 
 const Home: React.FC = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
-  const [progress, setProgress] = useState(0);
+  const [setProgress] = useState(0);
 
   const slides = [
     {
@@ -45,20 +44,20 @@ const Home: React.FC = () => {
     return () => clearInterval(progressInterval);
   }, [currentSlide]);
 
-  const goToSlide = (index: number) => {
-    setCurrentSlide(index);
-    setProgress(0);
-  };
-
-  const nextSlide = () => {
-    setCurrentSlide((prev) => (prev + 1) % slides.length);
-    setProgress(0);
-  };
-
-  const prevSlide = () => {
-    setCurrentSlide((prev) => (prev - 1 + slides.length) % slides.length);
-    setProgress(0);
-  };
+  // const goToSlide = (index: number) => {
+  //   setCurrentSlide(index);
+  //   setProgress(0);
+  // };
+  //
+  // const nextSlide = () => {
+  //   setCurrentSlide((prev) => (prev + 1) % slides.length);
+  //   setProgress(0);
+  // };
+  //
+  // const prevSlide = () => {
+  //   setCurrentSlide((prev) => (prev - 1 + slides.length) % slides.length);
+  //   setProgress(0);
+  // };
 
   return (
     <div className="home">
@@ -92,52 +91,52 @@ const Home: React.FC = () => {
       </section>
 
       {/* Image Slider Section */}
-      <section className="slider-section">
-        <div className="slider-container">
-          <h2 className="slider-title">
-            전문성과 체계성을 갖춘<br />
-            검증된 교육 시스템
-          </h2>
+      {/*<section className="slider-section">*/}
+      {/*  <div className="slider-container">*/}
+      {/*    <h2 className="slider-title">*/}
+      {/*      전문성과 체계성을 갖춘<br />*/}
+      {/*      검증된 교육 시스템*/}
+      {/*    </h2>*/}
 
-          <div className="image-slider">
-            {slides.map((slide, index) => (
-              <img
-                key={index}
-                src={slide.image}
-                alt={slide.alt}
-                className={`slider-image ${index === currentSlide ? 'active' : ''}`}
-              />
-            ))}
+      {/*    <div className="image-slider">*/}
+      {/*      {slides.map((slide, index) => (*/}
+      {/*        <img*/}
+      {/*          key={index}*/}
+      {/*          src={slide.image}*/}
+      {/*          alt={slide.alt}*/}
+      {/*          className={`slider-image ${index === currentSlide ? 'active' : ''}`}*/}
+      {/*        />*/}
+      {/*      ))}*/}
 
-            <div className="slider-overlay"></div>
+      {/*      <div className="slider-overlay"></div>*/}
 
-            {/* Controls */}
-            <button className="slider-controls slider-prev" onClick={prevSlide}>
-              <ChevronLeft size={20} />
-            </button>
-            <button className="slider-controls slider-next" onClick={nextSlide}>
-              <ChevronRight size={20} />
-            </button>
+      {/*      /!* Controls *!/*/}
+      {/*      <button className="slider-controls slider-prev" onClick={prevSlide}>*/}
+      {/*        <ChevronLeft size={20} />*/}
+      {/*      </button>*/}
+      {/*      <button className="slider-controls slider-next" onClick={nextSlide}>*/}
+      {/*        <ChevronRight size={20} />*/}
+      {/*      </button>*/}
 
-            {/* Dots */}
-            <div className="slider-dots">
-              {slides.map((_, index) => (
-                <button
-                  key={index}
-                  className={`slider-dot ${index === currentSlide ? 'active' : ''}`}
-                  onClick={() => goToSlide(index)}
-                />
-              ))}
-            </div>
+      {/*      /!* Dots *!/*/}
+      {/*      <div className="slider-dots">*/}
+      {/*        {slides.map((_, index) => (*/}
+      {/*          <button*/}
+      {/*            key={index}*/}
+      {/*            className={`slider-dot ${index === currentSlide ? 'active' : ''}`}*/}
+      {/*            onClick={() => goToSlide(index)}*/}
+      {/*          />*/}
+      {/*        ))}*/}
+      {/*      </div>*/}
 
-            {/* Progress Bar */}
-            <div
-              className="slider-progress"
-              style={{ width: `${progress}%` }}
-            />
-          </div>
-        </div>
-      </section>
+      {/*      /!* Progress Bar *!/*/}
+      {/*      <div*/}
+      {/*        className="slider-progress"*/}
+      {/*        style={{ width: `${progress}%` }}*/}
+      {/*      />*/}
+      {/*    </div>*/}
+      {/*  </div>*/}
+      {/*</section>*/}
     </div>
   );
 };
