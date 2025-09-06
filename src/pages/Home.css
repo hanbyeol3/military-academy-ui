@@ -217,8 +217,18 @@
 
 .hero-cta .btn {
   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-  min-width: 200px;
+  min-width: 250px;
+  width: 90%;
+  max-width: 300px;
   text-align: center;
+}
+
+@media (min-width: 640px) {
+  .hero-cta .btn {
+    min-width: 200px;
+    width: auto;
+    max-width: none;
+  }
 }
 
 .hero-cta .btn {

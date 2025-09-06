@@ -10,10 +10,16 @@
 
 /* Hero Section */
 .teachers-hero {
-  padding: 3rem 0 5rem;
+  padding: 3rem 0 2rem;
   text-align: center;
   position: relative;
   overflow: hidden;
+}
+
+@media (min-width: 768px) {
+  .teachers-hero {
+    padding: 3rem 0 3rem;
+  }
 }
 
 .teachers-hero::before {
@@ -49,6 +55,25 @@
   text-shadow: 0 0 20px rgba(110, 250, 204, 0.3);
 }
 
+/* 반응형 표시/숨김 */
+.mobile-only {
+  display: block;
+}
+
+.desktop-only {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .mobile-only {
+    display: none;
+  }
+  
+  .desktop-only {
+    display: block;
+  }
+}
+
 @media (min-width: 768px) {
   .teachers-title {
     font-size: 2.5rem;
@@ -64,7 +89,7 @@
 .teachers-subtitle {
   font-size: 1.25rem;
   color: #B8B8B8;
-  max-width: 800px;
+  max-width: 900px;
   margin: 0 auto;
   line-height: 1.6;
 }
@@ -90,9 +115,9 @@
 .teacher-card {
   display: flex;
   flex-direction: column;
-  gap: 2.5rem;
+  gap: 0.5rem;
   align-items: stretch;
-  margin-bottom: 5rem;
+  margin-bottom: 2rem;
   position: relative;
   min-height: 600px;
 }
@@ -102,6 +127,8 @@
     flex-direction: row;
     align-items: stretch;
     min-height: 500px;
+    gap: 2.5rem;
+    margin-bottom: 5rem;
   }
   
   .teacher-card.reverse {
@@ -125,7 +152,7 @@
 .teacher-image {
   position: relative;
   flex: 1;
-  aspect-ratio: 3 / 4;
+  aspect-ratio: 3.5 / 4;
   overflow: hidden;
   border-radius: 1rem;
   max-width: 400px;
@@ -188,7 +215,7 @@
   font-family: 'Pretendard', 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
   font-size: 2.2rem;
   font-weight: 700;
-  margin-bottom: 2rem;
+  margin-bottom: 0.5rem;
   background: linear-gradient(135deg, #6EFACC 0%, #9E7BFF 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -199,6 +226,12 @@
 @media (min-width: 768px) {
   .teacher-name {
     font-size: 2.8rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .teacher-name {
+    margin-bottom: 2rem;
   }
 }
 
@@ -226,9 +259,9 @@
 
 .teacher-description pre {
   font-family: 'Pretendard', 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-  font-size: 1.25rem;
+  font-size: 1rem;
   font-weight: 400;
-  line-height: 2;
+  line-height: 1.8;
   color: #ffffff;
   white-space: pre-line;
   margin: 0;
@@ -236,6 +269,26 @@
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
   word-break: keep-all;
   text-align: left;
+}
+
+.teacher-description pre::first-line {
+  font-weight: 700;
+  color: #ffffff;
+  font-size: 1.1rem;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+  letter-spacing: -0.01em;
+}
+
+@media (min-width: 1024px) {
+  .teacher-description pre {
+    font-size: 1.25rem;
+    line-height: 2;
+  }
+  
+  .teacher-description pre::first-line {
+    font-size: 1.35rem;
+    text-shadow: 0 0 15px rgba(255, 255, 255, 0.4);
+  }
 }
 
 .teacher-badges {

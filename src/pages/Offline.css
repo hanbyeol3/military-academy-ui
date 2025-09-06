@@ -7,11 +7,8 @@
 
 /* Hero Section */
 .offline-hero {
-  min-height: 70vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 5rem 0;
+  padding: 3rem 1rem;
+  text-align: center;
   position: relative;
   overflow: hidden;
 }
@@ -62,6 +59,25 @@
   background-clip: text;
 }
 
+/* 반응형 표시/숨김 */
+.mobile-only {
+  display: block;
+}
+
+.desktop-only {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .mobile-only {
+    display: none;
+  }
+  
+  .desktop-only {
+    display: block;
+  }
+}
+
 @media (min-width: 768px) {
   .offline-title {
     font-size: 2.5rem;
@@ -75,27 +91,30 @@
 }
 
 .offline-subtitle {
-  font-size: 1.5rem;
-  font-weight: 700;
-  background: linear-gradient(135deg, #6EFACC 0%, #9E7BFF 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  margin-bottom: 1.5rem;
+  font-size: 1.25rem;
+  color: #B8B8B8;
+  max-width: 800px;
+  margin: 0 auto 1rem;
+  line-height: 1.6;
 }
 
 @media (min-width: 768px) {
   .offline-subtitle {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 }
 
 .offline-description {
-  font-size: 1.25rem;
-  color: #B8B8B8;
-  max-width: 1000px;
-  margin: 0 auto;
-  line-height: 1.6;
+  font-size: 1rem;
+  color: #6EFACC;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+
+@media (min-width: 768px) {
+  .offline-description {
+    font-size: 1.125rem;
+  }
 }
 
 /* Team Image Section */
@@ -138,7 +157,7 @@
 
 /* Schedule Section */
 .schedule-section {
-  padding: 5rem 0;
+  padding: 2rem 0 2rem 0;
 }
 
 .schedule-container {
@@ -151,7 +170,7 @@
   font-size: 2rem;
   font-weight: 700;
   text-align: center;
-  margin-bottom: 4rem;
+  margin-bottom: 1rem;
   background: linear-gradient(135deg, #6EFACC 0%, #9E7BFF 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -164,12 +183,23 @@
   }
 }
 
+.schedule-subtitle {
+  font-size: 1.25rem;
+  color: #B8B8B8;
+  text-align: center;
+  margin-bottom: 3rem;
+  line-height: 1.6;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .schedule-grid {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 3rem;
+  gap: 2rem;
   max-width: 1500px;
-  margin: 0 auto;
+  margin: 0 auto 3rem;
 }
 
 @media (min-width: 1024px) {
@@ -352,15 +382,13 @@
 
 /* Features Section */
 .features-section {
-  padding: 5rem 0;
-  background: linear-gradient(180deg, #0b0f14 0%, #121826 50%, #0b0f14 100%);
+  padding: 3rem 0;
 }
 
 .features-grid {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 3rem;
-  margin-bottom: 4rem;
+  gap: 1.5rem;
 }
 
 @media (min-width: 1024px) {
@@ -423,7 +451,8 @@
 
 /* Registration CTA Section */
 .cta-section {
-  padding: 5rem 0;
+  padding: 3rem 0;
+  text-align: center;
 }
 
 .cta-container {

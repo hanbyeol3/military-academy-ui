@@ -48,6 +48,18 @@
   text-shadow: 0 0 20px rgba(110, 250, 204, 0.3);
 }
 
+/* 반응형 줄바꿈 */
+.mobile-break {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .mobile-break::before {
+    content: "\A";
+    white-space: pre;
+  }
+}
+
 @media (min-width: 768px) {
   .online-title {
     font-size: 2.5rem;

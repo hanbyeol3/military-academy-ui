@@ -68,7 +68,7 @@ const Online: React.FC = () => {
         <div className="online-hero-content fade-in-up">
           <h1 className="online-title">
             대성마이맥 경찰사관 인강 강사진은,<br />
-            <span className="highlight">단언컨대, 경찰사관 인터넷강의 No.1입니다</span>
+            <span className="highlight">단언컨대, <span className="mobile-break"></span>경찰사관 인터넷강의 No.1입니다</span>
           </h1>
           <p className="online-subtitle">
               각 강사의 전문성과 노하우가 집약된 체계적인 온라인 강의로 <br/>

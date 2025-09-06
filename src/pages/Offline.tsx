@@ -9,8 +9,8 @@ const Offline: React.FC = () => {
       <section className="offline-hero">
         <div className="offline-hero-content">
           <h1 className="offline-title">
-            <span>대성마이맥 경찰사관 강사진의</span><br />
-            <span className="highlight">대치두각학원 현장강의 안내</span>
+            <span className="mobile-only">대성마이맥 경찰사관<br />현장강의 강사진은,<br /><span className="highlight">단언컨대, 현장강의<br />No.1입니다</span></span>
+            <span className="desktop-only">대성마이맥 경찰사관 현장강의 강사진은,<br /><span className="highlight">단언컨대, 현장강의 No.1입니다</span></span>
           </h1>
 
           <h2 className="offline-subtitle">
@@ -41,6 +41,9 @@ const Offline: React.FC = () => {
           <h2 className="section-title">
             대치두각학원 현장강의 수업 안내
           </h2>
+          <p className="schedule-subtitle">
+            체계적인 학습 관리와 전문 강사진의 현장 지도로 합격의 꿈을 실현하세요
+          </p>
 
           <div className="schedule-grid">
             {/* Regular Classes */}
