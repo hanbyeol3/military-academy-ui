@@ -1,69 +1,55 @@
-# React + TypeScript + Vite
+# 대성마이맥 경찰사관 MASTER팀 소개 홈페이지
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+대성마이맥 경찰사관 MASTER팀의 공식 소개 홈페이지입니다. React + TypeScript + Vite로 구축된 현대적이고 반응형 웹사이트입니다.
 
-Currently, two official plugins are available:
+## ✨ 주요 특징
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **🎨 현대적인 디자인**: 블랙톤 + 민트 컬러의 고급스럽고 세련된 디자인
+- **📱 완전 반응형**: 모바일, 태블릿, 데스크탑 모든 기기에서 완벽한 사용자 경험
+- **⚡ 뛰어난 성능**: Vite 기반의 빠른 개발 환경과 최적화된 빌드
+- **🎭 풍부한 애니메이션**: Framer Motion을 활용한 부드럽고 자연스러운 인터랙션
+- **♿ 접근성 고려**: 키보드 내비게이션, 스크린 리더 지원 등 웹 접근성 준수
 
-## Expanding the ESLint configuration
+## 🛠️ 기술 스택
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- **React 18** + **TypeScript** + **Vite**
+- **React Router v6** - 클라이언트 사이드 라우팅
+- **Tailwind CSS** - 유틸리티 기반 스타일링
+- **Framer Motion** - 부드러운 애니메이션
+- **Lucide React** - 아이콘 시스템
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## 🚀 시작하기
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+1. **의존성 설치**
+   ```bash
+   npm install
+   ```
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+2. **개발 서버 시작**
+   ```bash
+   npm run dev
+   ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+3. **빌드**
+   ```bash
+   npm run build
+   ```
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 📄 페이지 구성
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+- **메인 페이지** (`/`) - 히어로 섹션과 주요 소개
+- **강사진 소개** (`/teachers`) - 전문 강사진 상세 정보
+- **대성마이맥 인강** (`/online`) - 온라인 강의 안내
+- **대치두각 현장강의** (`/offline`) - 현장 강의 안내
+
+## 📱 반응형 디자인
+
+- **Mobile**: `< 768px`
+- **Tablet**: `768px - 1023px`
+- **Desktop**: `≥ 1024px`
+
+## 📞 문의사항
+
+- **현장강의 문의**: 02-556-2700
+- **대성마이맥**: https://www.mimacstudy.com
+- **대치두각학원**: https://dugak.net

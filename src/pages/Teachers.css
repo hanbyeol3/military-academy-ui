@@ -1,0 +1,314 @@
+/* Teachers Page Styles */
+.teachers {
+  padding-top: 5rem;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0b0f14 0%, #121826 50%, #0b0f14 100%);
+}
+
+/* Hero Section */
+.teachers-hero {
+  padding: 3rem 0 5rem;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.teachers-hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(circle at 50% 30%, rgba(110, 250, 204, 0.1) 0%, transparent 70%);
+}
+
+.teachers-hero-content {
+  position: relative;
+  z-index: 10;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.teachers-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 1.3;
+  margin-bottom: 2rem;
+  color: #ffffff;
+}
+
+.teachers-title .highlight {
+  background: linear-gradient(135deg, #6EFACC 0%, #9E7BFF 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-shadow: 0 0 20px rgba(110, 250, 204, 0.3);
+}
+
+@media (min-width: 768px) {
+  .teachers-title {
+    font-size: 3rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .teachers-title {
+    font-size: 3.5rem;
+  }
+}
+
+.teachers-subtitle {
+  font-size: 1.25rem;
+  color: #B8B8B8;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+@media (min-width: 768px) {
+  .teachers-subtitle {
+    font-size: 1.5rem;
+  }
+}
+
+/* Teachers List */
+.teachers-list {
+  padding: 2rem 0 5rem;
+}
+
+.teachers-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Teacher Card */
+.teacher-card {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3rem;
+  align-items: center;
+  margin-bottom: 6rem;
+  position: relative;
+}
+
+@media (min-width: 1024px) {
+  .teacher-card {
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  .teacher-card.reverse {
+    direction: rtl;
+  }
+  
+  .teacher-card.reverse > * {
+    direction: ltr;
+  }
+}
+
+.teacher-card::before {
+  content: '';
+  position: absolute;
+  top: -2rem;
+  left: -2rem;
+  right: -2rem;
+  bottom: -2rem;
+  background: linear-gradient(135deg, rgba(110, 250, 204, 0.03) 0%, transparent 50%, rgba(158, 123, 255, 0.03) 100%);
+  border-radius: 2rem;
+  z-index: -1;
+}
+
+/* Teacher Image */
+.teacher-image {
+  position: relative;
+}
+
+.teacher-image img {
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+  border-radius: 1rem;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.teacher-image:hover img {
+  transform: scale(1.05);
+}
+
+.teacher-image::before {
+  content: '';
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  right: -10px;
+  bottom: -10px;
+  background: linear-gradient(135deg, #6EFACC, #9E7BFF);
+  border-radius: 1.2rem;
+  z-index: -1;
+  opacity: 0.6;
+  animation: imageGlow 3s ease-in-out infinite alternate;
+}
+
+@keyframes imageGlow {
+  0% { opacity: 0.3; transform: scale(1); }
+  100% { opacity: 0.6; transform: scale(1.02); }
+}
+
+/* Teacher Info */
+.teacher-info {
+  padding: 1rem;
+}
+
+.teacher-name {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  background: linear-gradient(135deg, #6EFACC 0%, #9E7BFF 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+@media (min-width: 768px) {
+  .teacher-name {
+    font-size: 2.5rem;
+  }
+}
+
+.teacher-description {
+  background: rgba(18, 24, 38, 0.6);
+  padding: 2rem;
+  border-radius: 1rem;
+  border: 1px solid rgba(110, 250, 204, 0.2);
+  backdrop-filter: blur(10px);
+}
+
+.teacher-description pre {
+  font-family: inherit;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #ffffff;
+  white-space: pre-line;
+  margin: 0;
+}
+
+.teacher-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 1.5rem;
+}
+
+.teacher-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  background: linear-gradient(135deg, rgba(110, 250, 204, 0.2) 0%, rgba(158, 123, 255, 0.2) 100%);
+  color: #6EFACC;
+  border: 1px solid rgba(110, 250, 204, 0.3);
+  border-radius: 2rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.teacher-badge:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(110, 250, 204, 0.3);
+}
+
+/* Decorative Elements */
+.teacher-decoration {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, rgba(110, 250, 204, 0.1) 0%, rgba(158, 123, 255, 0.1) 100%);
+  animation: float 6s ease-in-out infinite;
+}
+
+.teacher-decoration:nth-child(1) {
+  top: 10%;
+  right: 10%;
+  animation-delay: 0s;
+}
+
+.teacher-decoration:nth-child(2) {
+  bottom: 20%;
+  left: 5%;
+  animation-delay: 2s;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-20px) rotate(180deg); }
+}
+
+/* Statistics Section */
+.teachers-stats {
+  padding: 5rem 0;
+  background: linear-gradient(135deg, rgba(11, 15, 20, 0.8) 0%, rgba(18, 24, 38, 0.8) 100%);
+  margin: 5rem 0;
+}
+
+.stats-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.stats-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 3rem;
+  background: linear-gradient(135deg, #6EFACC 0%, #9E7BFF 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+@media (min-width: 768px) {
+  .stats-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.stat-card {
+  text-align: center;
+  padding: 2rem;
+  background: rgba(18, 24, 38, 0.4);
+  border: 1px solid rgba(110, 250, 204, 0.2);
+  border-radius: 1rem;
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-5px);
+  border-color: rgba(110, 250, 204, 0.5);
+  box-shadow: 0 10px 30px rgba(110, 250, 204, 0.2);
+}
+
+.stat-number {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #6EFACC;
+  text-shadow: 0 0 20px rgba(110, 250, 204, 0.5);
+  margin-bottom: 1rem;
+}
+
+.stat-label {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #ffffff;
+}

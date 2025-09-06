@@ -1,27 +1,51 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Navigation from './components/Navigation/Navigation';
-import HomePage from './components/HomePage/HomePage';
-import Instructors from './components/Instructors/Instructors';
-import OnlineLecture from './components/OnlineLecture/OnlineLecture';
-import OfflineLecture from './components/OfflineLecture/OfflineLecture';
-import './App.css';
+import React from 'react';
+import { BrowserRouter as Router } from 'react-router-dom';
 
-function App() {
+// Components
+import Header from './components/common/Header';
+import Footer from './components/common/Footer';
+import AppRoutes from './routes';
+
+// Styles
+import './styles/globals.css';
+
+const App: React.FC = () => {
   return (
     <Router>
-      <div className="App">
-        <Navigation />
-        <main className="main-content">
-          <Routes>
-            <Route path="/" element={<HomePage />} />
-            <Route path="/instructors" element={<Instructors />} />
-            <Route path="/online-lecture" element={<OnlineLecture />} />
-            <Route path="/offline-lecture" element={<OfflineLecture />} />
-          </Routes>
-        </main>
+      <div className="app">
+        <div className="app-bg-wrapper">
+          <div className="app-bg-element app-bg-element-1"></div>
+          <div className="app-bg-element app-bg-element-2"></div>
+          <div className="app-bg-element app-bg-element-3"></div>
+        </div>
+
+        <div className="app-content">
+          <Header />
+          
+          <main className="main-content">
+            <AppRoutes />
+          </main>
+
+          <Footer />
+        </div>
+
+        <button 
+          onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+          className="scroll-to-top"
+          aria-label="맨 위로 스크롤"
+        >
+          <svg 
+            className="scroll-icon" 
+            fill="none" 
+            stroke="currentColor" 
+            viewBox="0 0 24 24"
+          >
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 10l7-7m0 0l7 7m-7-7v18" />
+          </svg>
+        </button>
       </div>
     </Router>
   );
-}
+};
 
-export default App
+export default App;
