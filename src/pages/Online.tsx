@@ -71,10 +71,11 @@ const Online: React.FC = () => {
             <span className="highlight">단언컨대, 경찰사관 인터넷강의 No.1입니다</span>
           </h1>
           <p className="online-subtitle">
-            언제 어디서든 최고의 강의를 수강할 수 있는 온라인 인강 시스템
+              각 강사의 전문성과 노하우가 집약된 체계적인 온라인 강의로 <br/>
+              경찰사관학교 합격의 꿈을 이루어보세요
           </p>
           <p className="online-notice">
-            (각 강사를 클릭하면 강사 인강 페이지로 이동)
+            (각 강사를 클릭하면 강사 인강 페이지로 이동합니다)
           </p>
         </div>
       </section>
@@ -82,17 +83,9 @@ const Online: React.FC = () => {
       {/* Teachers Grid */}
       <section className="online-teachers">
         <div className="online-container">
-          <h2 className="online-grid-title">
-            전문 강사진 인강 수강
-          </h2>
-          <p className="online-grid-subtitle">
-            각 강사의 전문성과 노하우가 집약된 체계적인 온라인 강의로 
-            경찰사관학교 합격의 꿈을 이루어보세요
-          </p>
-          
           <div className="teachers-grid">
             {teachers.map((teacher, index) => (
-              <div 
+              <div
                 key={teacher.id}
                 className="teacher-online-card fade-in-up"
                 style={{ animationDelay: `${index * 0.2}s` }}
@@ -101,13 +94,13 @@ const Online: React.FC = () => {
                 <div className="teacher-badge">
                   {teacher.name}
                 </div>
-                
+
                 <div className="teacher-card-image">
                   <img
                     src={teacher.image}
                     alt={teacher.name}
                   />
-                  
+
                   <div className="teacher-overlay">
                     <div className="teacher-overlay-content">
                       <div className="overlay-icon">
@@ -131,10 +124,10 @@ const Online: React.FC = () => {
           <h2 className="features-title">
             온라인 인강의 특장점
           </h2>
-          
+
           <div className="features-grid">
             {features.map((feature, index) => (
-              <div 
+              <div
                 key={index}
                 className="feature-item fade-in-up"
                 style={{ animationDelay: `${index * 0.1}s` }}
@@ -155,16 +148,16 @@ const Online: React.FC = () => {
             지금 바로 시작하세요
           </h2>
           <p className="cta-description fade-in-up">
-            경찰사관학교 합격의 첫걸음을 대성마이맥 전문 강사진과 함께 내딛어보세요. 
+            경찰사관학교 합격의 첫걸음을 대성마이맥 전문 강사진과 함께 내딛어보세요.
             체계적인 온라인 학습 시스템으로 효율적인 학습이 가능합니다.
           </p>
-          
+
           <div className="cta-card fade-in-up">
             <p className="cta-card-title">
               📞 문의 및 상담
             </p>
             <p className="cta-card-text">
-              인강 수강에 대한 자세한 문의는 대성마이맥 홈페이지를 방문하시거나 
+              인강 수강에 대한 자세한 문의는 대성마이맥 홈페이지를 방문하시거나
               각 강사 페이지에서 확인하실 수 있습니다.
             </p>
           </div>

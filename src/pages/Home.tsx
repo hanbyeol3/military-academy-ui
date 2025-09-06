@@ -8,15 +8,15 @@ const Home: React.FC = () => {
 
   const slides = [
     {
-      image: '/assets/image/main_inside.png',
+      image: '/assets/main/main_image.png',
       alt: '대성마이맥 경찰사관 MASTER팀 메인'
     },
     {
-      image: '/assets/image/2.png',
+      image: '/assets/main/main_image2.png',
       alt: '대성마이맥 경찰사관 강사진'
     },
     {
-      image: '/assets/image/1.png',
+      image: '/assets/main/main_image3.png',
       alt: '경찰사관학교 대비 학습'
     }
   ];
@@ -65,6 +65,7 @@ const Home: React.FC = () => {
       {/* Hero Section */}
       <section className="hero">
         <div className="hero-bg"></div>
+        <div className="hero-team-image"></div>
         <div className="hero-content fade-in-up">
           <h1 className="hero-title">
             <span className="char">대성마이맥 경찰사관 인강 강사진은,</span>
@@ -78,7 +79,10 @@ const Home: React.FC = () => {
           </p>
           <div className="hero-cta">
             <a href="/teachers" className="btn btn-primary btn-lg">
-              강사진 소개 보기
+              강사진 소개
+            </a>
+            <a href="/online" className="btn btn-secondary btn-lg">
+              인강 안내
             </a>
             <a href="/offline" className="btn btn-outline btn-lg">
               현장 강의 안내

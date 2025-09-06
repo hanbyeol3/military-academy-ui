@@ -89,7 +89,6 @@ const Teachers: React.FC = () => {
 
                 <div className="teacher-badges">
                   <span className="teacher-badge">대치동 수강생 수 1위</span>
-                  <span className="teacher-badge">전문 강사진</span>
                 </div>
               </div>
             </div>

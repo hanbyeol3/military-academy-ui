@@ -6,20 +6,17 @@
   right: 0;
   z-index: 50;
   transition: all 0.3s ease;
-  background: rgba(0, 0, 0, 0.8);
   backdrop-filter: blur(10px);
+  padding: 15px 0;
 }
 
 .header.scrolled {
-  background: rgba(0, 0, 0, 0.95);
-  padding: 0.75rem 0;
   box-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
-  border-bottom: 1px solid rgba(110, 250, 204, 0.2);
 }
 
 .header-container {
-  margin: 0 auto;
-  padding: 0 0.5rem;
+  margin: auto;
+  padding: 0 1rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -37,28 +34,56 @@
   }
 }
 
-/* Logo */
-.header-logo {
-    flex-shrink: 0;
-    text-decoration: none;
-}
-
+/* Logo (기본: 모바일 기준) */
 .header-logo img {
     filter: invert(100%);
-  transition: all 0.3s ease;
-  height: 6rem;
-  width: auto;
+    transition: all 0.3s ease;
+    height: 2rem; /* 모바일에서는 작게 */
+    width: auto;
 }
 
-.header.scrolled .header-logo img {
-  height: 3rem;
+.header-logo:hover img {
+    transform: scale(1.1);
+    filter: invert(100%) drop-shadow(0 0 10px rgba(110, 250, 204, 0.5));
 }
+
+/* 태블릿 이상에서 확대 */
+@media (min-width: 768px) {
+    .header-logo img {
+        height: 3rem;
+    }
+}
+
+/* 데스크탑 이상에서 더 크게 */
+@media (min-width: 1024px) {
+    .header-logo img {
+        height: 3.5rem;
+    }
+}
+
+/* 스크롤 시 축소 효과 */
+.header.scrolled .header-logo img {
+    height: 1.8rem; /* 모바일에서 더 작게 */
+}
+
+@media (min-width: 768px) {
+    .header.scrolled .header-logo img {
+        height: 2.5rem; /* 태블릿에서는 조금 크게 */
+    }
+}
+
+@media (min-width: 1024px) {
+    .header.scrolled .header-logo img {
+        height: 3rem; /* 데스크톱에서는 원래 크기 */
+    }
+}
+
 
 /* Navigation */
 .header-nav {
   display: none;
   align-items: center;
-  gap: 1.5rem;
+  gap: 1rem;
 }
 
 @media (min-width: 768px) {
@@ -68,9 +93,9 @@
 }
 
 .header-nav-link {
-  padding: 0.5rem 1rem;
-  font-size: 0.875rem;
-  font-weight: 500;
+  padding: 0.5rem 0.5rem;
+  font-size: 1.3rem;
+  font-weight: 600;
   text-decoration: none;
   color: #ffffff;
   border-radius: 0.5rem;
@@ -79,7 +104,8 @@
 
 @media (min-width: 1024px) {
   .header-nav-link {
-    font-size: 1rem;
+      font-size: 1.3rem;
+      padding: 0.5rem 1rem;
   }
 }
 

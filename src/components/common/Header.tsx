@@ -36,7 +36,7 @@ const Header: React.FC = () => {
         {/* Logo */}
         <Link to="/" className="header-logo" onClick={handleMenuClick}>
           <img 
-            src="/assets/MIMAC_Logo.png"
+            src="/assets/main/main_logo.png"
             alt="MIMAC Logo" 
           />
         </Link>

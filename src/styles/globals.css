@@ -249,24 +249,54 @@ body {
 }
 
 .btn-primary {
-  background: linear-gradient(135deg, var(--mint) 0%, var(--mint-light) 100%);
-  color: var(--bg-primary);
+  background: linear-gradient(135deg, rgba(110, 250, 204, 0.1) 0%, rgba(158, 123, 255, 0.1) 100%);
+  color: #ffffff;
+  border: 2px solid rgba(110, 250, 204, 0.4);
+  backdrop-filter: blur(10px);
+  position: relative;
+  overflow: hidden;
 }
 
 .btn-primary:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 4px 20px rgba(110, 250, 204, 0.3);
+  background: linear-gradient(135deg, rgba(110, 250, 204, 0.2) 0%, rgba(158, 123, 255, 0.2) 100%);
+  border-color: rgba(110, 250, 204, 0.8);
+  color: #6EFACC;
+  transform: translateY(-3px) scale(1.02);
+  box-shadow: 0 8px 30px rgba(110, 250, 204, 0.3);
+}
+
+.btn-secondary {
+  background: linear-gradient(135deg, rgba(110, 250, 204, 0.1) 0%, rgba(158, 123, 255, 0.1) 100%);
+  color: #ffffff;
+  border: 2px solid rgba(158, 123, 255, 0.4);
+  backdrop-filter: blur(10px);
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-secondary:hover {
+  background: linear-gradient(135deg, rgba(110, 250, 204, 0.2) 0%, rgba(158, 123, 255, 0.2) 100%);
+  border-color: rgba(158, 123, 255, 0.8);
+  color: #9E7BFF;
+  transform: translateY(-3px) scale(1.02);
+  box-shadow: 0 8px 30px rgba(158, 123, 255, 0.3);
 }
 
 .btn-outline {
-  border: 2px solid var(--mint);
-  color: var(--mint);
-  background: transparent;
+  background: linear-gradient(135deg, rgba(110, 250, 204, 0.1) 0%, rgba(158, 123, 255, 0.1) 100%);
+  color: #ffffff;
+  border: 2px solid rgba(110, 250, 204, 0.4);
+  backdrop-filter: blur(10px);
+  position: relative;
+  overflow: hidden;
 }
 
 .btn-outline:hover {
-  background: var(--mint);
-  color: var(--bg-primary);
+  background: linear-gradient(135deg, rgba(110, 250, 204, 0.2) 0%, rgba(158, 123, 255, 0.2) 100%);
+  border-color: rgba(110, 250, 204, 0.8);
+  color: #6EFACC;
+  transform: translateY(-3px) scale(1.02);
+  box-shadow: 0 8px 30px rgba(110, 250, 204, 0.3);
 }
 
 .btn-ghost {
@@ -537,4 +567,50 @@ img {
 .scroll-icon {
   width: 24px;
   height: 24px;
+}
+
+/* Error Page */
+.error-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 5rem;
+}
+
+.error-content {
+  text-align: center;
+}
+
+.error-title {
+  font-size: 6rem;
+  font-weight: 700;
+  background: linear-gradient(135deg, #6EFACC 0%, #9E7BFF 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 1rem;
+}
+
+.error-description {
+  font-size: 1.25rem;
+  color: #B8B8B8;
+  margin-bottom: 2rem;
+}
+
+.error-button {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.75rem 1.5rem;
+  background: linear-gradient(135deg, #6EFACC 0%, #8BFDD6 100%);
+  color: #0b0f14;
+  font-weight: 600;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.error-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(110, 250, 204, 0.3);
 }
