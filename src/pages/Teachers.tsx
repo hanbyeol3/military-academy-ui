@@ -75,6 +75,9 @@ const Teachers: React.FC = () => {
                   src={teacher.image}
                   alt={teacher.name}
                 />
+                <div className="teacher-badges">
+                  <span className="teacher-badge">마스터팀</span>
+                </div>
               </div>
 
               {/* Teacher Info */}
@@ -85,10 +88,6 @@ const Teachers: React.FC = () => {
                 
                 <div className="teacher-description">
                   <pre>{teacher.description}</pre>
-                </div>
-
-                <div className="teacher-badges">
-                  <span className="teacher-badge">대치동 수강생 수 1위</span>
                 </div>
               </div>
             </div>
