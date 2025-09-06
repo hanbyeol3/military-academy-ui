@@ -66,6 +66,13 @@ const Home: React.FC = () => {
       <section className="hero">
         <div className="hero-bg"></div>
         <div className="hero-team-image"></div>
+        <div className="hero-particles">
+          <div className="particle particle-1"></div>
+          <div className="particle particle-2"></div>
+          <div className="particle particle-3"></div>
+          <div className="particle particle-4"></div>
+          <div className="particle particle-5"></div>
+        </div>
         <div className="hero-content fade-in-up">
           <h1 className="hero-title">
             <span className="char">대성마이맥 경찰사관 인강 강사진은,</span>
