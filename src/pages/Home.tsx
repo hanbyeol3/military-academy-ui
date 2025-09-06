@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from 'react';
+import { ChevronLeft, ChevronRight } from 'lucide-react';
 import './Home.css';
 
 const Home: React.FC = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
-  const [setProgress] = useState(0);
+  const [progress, setProgress] = useState(0);
 
   const slides = [
     {
