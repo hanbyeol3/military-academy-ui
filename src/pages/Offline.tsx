@@ -23,17 +23,6 @@ const Offline: React.FC = () => {
         </div>
       </section>
 
-      {/* Team Image Section */}
-      <section className="team-image-section">
-        <div className="team-image-container">
-          <img
-            src="/assets/teacher/team_image.jpg"
-            alt="대성마이맥 경찰사관 강사진 팀"
-            className="team-image"
-            loading="lazy"
-          />
-        </div>
-      </section>
 
       {/* Schedule Section */}
       <section className="schedule-section">
@@ -57,7 +46,8 @@ const Offline: React.FC = () => {
               
               <div className="price-info">
                 <p className="price-text">
-                  수강료: 4주기준 과목별 28만원
+                  수강료: 4주기준 과목별 28만원<br />
+                    <span className="schedule-desc">(요일은 변동가능)</span>
                 </p>
                 <div>
                   <div className="schedule-item">
@@ -131,13 +121,19 @@ const Offline: React.FC = () => {
             <div className="contact-card">
               <div className="contact-details">
                 <div className="contact-item">
-                  <MapPin className="contact-icon" />
-                  <span className="contact-text">수업장소: 대치두각학원 S관</span>
+                    <div className="contact-inner-item">
+                      <MapPin className="contact-icon" />
+                      <span className="contact-text">수업장소: 대치두각학원 S관</span>
+                    </div>
+                    <div className="contact-inner-item">
+                      <Phone className="contact-icon" />
+                      <span className="contact-text">문의: 02-556-2700</span>
+                    </div>
                 </div>
-                <div className="contact-item">
-                  <Phone className="contact-icon" />
-                  <span className="contact-text">문의: 02-556-2700</span>
-                </div>
+                {/*<div className="contact-item">*/}
+                {/*  <Phone className="contact-icon" />*/}
+                {/*  <span className="contact-text">문의: 02-556-2700</span>*/}
+                {/*</div>*/}
               </div>
             </div>
           </div>
@@ -163,20 +159,14 @@ const Offline: React.FC = () => {
               </div>
               <div className="feature-content">
                 <img
-                  src="/assets/offlineLecture/offline_image.jpg"
-                  alt="대치두각학원 현장강의 모습"
-                  className="feature-image"
-                  loading="lazy"
-                />
-                <img
-                  src="/assets/offlineLecture/online.png"
+                  src="/assets/offlineLecture/offline1.png"
                   alt="대치두각학원 현장강의 모습"
                   className="feature-image"
                   loading="lazy"
                 />
                 <p>현장강의에 이어 복습인강까지 제공하여 체계적 학습관리 가능</p>
                 <img
-                  src="/assets/offlineLecture/book.png"
+                  src="/assets/offlineLecture/offline2.png"
                   alt="대치두각학원 현장강의 모습"
                   className="feature-image"
                   loading="lazy"
@@ -219,7 +209,7 @@ const Offline: React.FC = () => {
           </a>
 
           <p className="cta-description">
-            7년 연속 대치동 1위의 노하우가 집약된 현장 강의를 지금 바로 신청하세요. 
+            7년 연속 대치동 1위의 노하우가 집약된 현장 강의를 지금 바로 신청하세요. <br/>
             전문 강사진과 함께하는 체계적인 학습으로 합격의 꿈을 이루어보세요.
           </p>
 

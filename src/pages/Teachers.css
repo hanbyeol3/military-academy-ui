@@ -208,13 +208,14 @@
   flex: 1;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-end;
 }
 
 .teacher-name {
   font-family: 'Pretendard', 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
   font-size: 2.2rem;
   font-weight: 700;
+  margin-top: 0.5rem;
   margin-bottom: 0.5rem;
   background: linear-gradient(135deg, #6EFACC 0%, #9E7BFF 100%);
   -webkit-background-clip: text;
@@ -223,15 +224,30 @@
   letter-spacing: -0.02em;
 }
 
+.teacher-title {
+  font-family: 'Pretendard', 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #9E7BFF;
+  margin-bottom: 1rem;
+  font-style: italic;
+  letter-spacing: -0.01em;
+  text-shadow: 0 2px 4px rgba(158, 123, 255, 0.2);
+}
+
 @media (min-width: 768px) {
   .teacher-name {
     font-size: 2.8rem;
+  }
+  
+  .teacher-title {
+    font-size: 1.5rem;
   }
 }
 
 @media (min-width: 1024px) {
   .teacher-name {
-    margin-bottom: 2rem;
+    margin-bottom: 0.5rem;
   }
 }
 

@@ -6,6 +6,7 @@ const Teachers: React.FC = () => {
     {
       id: 1,
       name: '국어 신한종 강사',
+        title : '국어는 국신, 처음부터 끝까지',
       image: '/assets/teacher/신한종2.jpg',
       description: `서강대학교 국어국문학과
 현) 대성마이맥 경찰사관 국어 인터넷강의
@@ -19,6 +20,7 @@ const Teachers: React.FC = () => {
     {
       id: 2,
       name: '영어 이상인 강사',
+        title : '영어는 이상인과 함께 Master',
       image: '/assets/teacher/이상인1.jpg',
       description: `연세대학교
  현) 대성마이맥 경찰사관 영어 인터넷강의
@@ -32,6 +34,7 @@ const Teachers: React.FC = () => {
     {
       id: 3,
       name: '수학 홍창우 강사',
+        title : 'Math Master, 홍창우와 함께',
       image: '/assets/teacher/홍창우1.jpg',
       description: `고려대학교 학사, 석사
  현) 대성마이맥 경찰사관 수학 인터넷강의
@@ -84,6 +87,9 @@ const Teachers: React.FC = () => {
                 <h3 className="teacher-name">
                   {teacher.name}
                 </h3>
+                <p className="teacher-title">
+                  {teacher.title}
+                </p>
                 
                 <div className="teacher-description">
                   <pre>{teacher.description}</pre>
