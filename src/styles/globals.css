@@ -479,6 +479,7 @@ img {
   position: absolute;
   border-radius: 50%;
   filter: blur(60px);
+  display: none; /* 데코레이션 요소 숨김 */
 }
 
 .app-bg-element-1 {
@@ -488,6 +489,7 @@ img {
   height: 384px;
   background: rgba(110, 250, 204, 0.02);
   animation: floatElement1 60s ease-in-out infinite;
+  display: none; /* 데코레이션 요소 숨김 */
 }
 
 .app-bg-element-2 {
@@ -495,6 +497,7 @@ img {
   right: 25%;
   width: 320px;
   height: 320px;
+  display: none; /* 데코레이션 요소 숨김 */
   background: rgba(158, 123, 255, 0.02);
   animation: floatElement2 80s ease-in-out infinite reverse;
 }

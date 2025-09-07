@@ -141,28 +141,28 @@ const Online: React.FC = () => {
         </div>
       </section>
 
-      {/* Features Section */}
-      <section className="online-features">
-        <div className="features-container">
-          <h2 className="features-title">
-            온라인 인강의 특장점
-          </h2>
+      {/*/!* Features Section *!/*/}
+      {/*<section className="online-features">*/}
+      {/*  <div className="features-container">*/}
+      {/*    <h2 className="features-title">*/}
+      {/*      온라인 인강의 특장점*/}
+      {/*    </h2>*/}
 
-          <div className="features-grid">
-            {features.map((feature, index) => (
-              <div
-                key={index}
-                className="feature-item fade-in-up"
-                style={{ animationDelay: `${index * 0.1}s` }}
-              >
-                <div className="feature-icon">{feature.icon}</div>
-                <div className="feature-title">{feature.title}</div>
-                <div className="feature-description">{feature.description}</div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+      {/*    <div className="features-grid">*/}
+      {/*      {features.map((feature, index) => (*/}
+      {/*        <div*/}
+      {/*          key={index}*/}
+      {/*          className="feature-item fade-in-up"*/}
+      {/*          style={{ animationDelay: `${index * 0.1}s` }}*/}
+      {/*        >*/}
+      {/*          <div className="feature-icon">{feature.icon}</div>*/}
+      {/*          <div className="feature-title">{feature.title}</div>*/}
+      {/*          <div className="feature-description">{feature.description}</div>*/}
+      {/*        </div>*/}
+      {/*      ))}*/}
+      {/*    </div>*/}
+      {/*  </div>*/}
+      {/*</section>*/}
 
       {/* CTA Section */}
       <section className="online-cta">

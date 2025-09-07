@@ -53,7 +53,7 @@ const Teachers: React.FC = () => {
             <section className="teachers-hero">
                 <div className="teachers-hero-content fade-in-up">
                     <h1 className="teachers-title">
-                        <span className="mobile-only">단언컨대,<br />경찰사관 1차시험대비는<br />대성마이맥 경찰사관<br />마스터팀 강사진이<br /><span className="highlight">No.1입니다.</span></span>
+                        <span className="mobile-only">단언컨대,<br />경찰사관 1차시험대비는<br /><span className="highlight">대성마이맥 경찰사관<br />마스터팀 강사진이<br />No.1입니다.</span></span>
                         <span className="desktop-only">단언컨대,<br />경찰사관 1차시험대비는<br /><span className="highlight">대성마이맥 경찰사관 마스터팀 강사진이 No.1입니다.</span></span>
                     </h1>
                     <p className="teachers-subtitle">

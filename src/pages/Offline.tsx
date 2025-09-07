@@ -214,7 +214,7 @@ const Offline: React.FC = () => {
               <span className="contact-text">
                 <span className="mobile-only">
                   수업문의<br />
-                  02-556-2700
+                  두각학원 02-556-2700
                 </span>
                 <span className="desktop-only">
                   수업문의: 두각학원 02-556-2700
