@@ -1,5 +1,5 @@
 import React from 'react';
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route, Link } from 'react-router-dom';
 
 // Pages
 import Home from '../pages/Home';
@@ -22,9 +22,9 @@ const AppRoutes: React.FC = () => {
             <div className="error-content">
               <h1 className="error-title">404</h1>
               <p className="error-description">페이지를 찾을 수 없습니다</p>
-              <a href="/" className="error-button">
+              <Link to="/" className="error-button">
                 홈으로 돌아가기
-              </a>
+              </Link>
             </div>
           </div>
         } 

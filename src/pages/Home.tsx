@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import './Home.css';
 
 const Home: React.FC = () => {
@@ -84,15 +85,15 @@ const Home: React.FC = () => {
             </span>
           </p>
           <div className="hero-cta">
-            <a href="/teachers" className="btn btn-primary btn-lg">
+            <Link to="/teachers" className="btn btn-primary btn-lg">
               강사진 소개
-            </a>
-            <a href="/online" className="btn btn-secondary btn-lg">
+            </Link>
+            <Link to="/online" className="btn btn-secondary btn-lg">
               대성 인강 안내
-            </a>
-            <a href="/offline" className="btn btn-outline btn-lg">
+            </Link>
+            <Link to="/offline" className="btn btn-outline btn-lg">
               대치동 현강 안내
-            </a>
+            </Link>
           </div>
         </div>
       </section>
