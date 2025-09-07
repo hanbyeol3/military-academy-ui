@@ -67,18 +67,50 @@ const Offline: React.FC = () => {
             {/* Clinic Classes */}
             <div className="class-category clinic">
               <h3 className="section-sub-title clinic">사관학교 클리닉반</h3>
-              <p className="section-sub-title-info">(요일은 변동가능, 수강료: 4주기준 과목별 10만원)</p>
+              <p className="section-sub-title-info">
+                <span className="mobile-only">
+                  (요일은 변동가능,<br />
+                  수강료: 4주기준 과목별 10만원)
+                </span>
+                <span className="desktop-only">
+                  (요일은 변동가능, 수강료: 4주기준 과목별 10만원)
+                </span>
+              </p>
               <div className="class-schedule">
                 <div className="class-schedule-item">
-                  <div className="class-schedule-name">수학 클리닉: 모의평가+개별지도+개별 과제검사</div>
+                  <div className="class-schedule-name">
+                    <span className="mobile-only">
+                      수학 클리닉:<br />
+                      모의평가+개별지도+개별 과제검사
+                    </span>
+                    <span className="desktop-only">
+                      수학 클리닉: 모의평가+개별지도+개별 과제검사
+                    </span>
+                  </div>
                   <div className="class-schedule-time">화요일 20:00~22:00</div>
                 </div>
                 <div className="class-schedule-item">
-                  <div className="class-schedule-name">영어 클리닉: 모의평가+개별지도+개별 과제검사</div>
+                  <div className="class-schedule-name">
+                    <span className="mobile-only">
+                      영어 클리닉:<br />
+                      모의평가+개별지도+개별 과제검사
+                    </span>
+                    <span className="desktop-only">
+                      영어 클리닉: 모의평가+개별지도+개별 과제검사
+                    </span>
+                  </div>
                   <div className="class-schedule-time">수요일 20:00~22:00</div>
                 </div>
                 <div className="class-schedule-item">
-                  <div className="class-schedule-name">국어 클리닉 : 모의평가+개별지도+개별 과제검사</div>
+                  <div className="class-schedule-name">
+                    <span className="mobile-only">
+                      국어 클리닉:<br />
+                      모의평가+개별지도+개별 과제검사
+                    </span>
+                    <span className="desktop-only">
+                      국어 클리닉: 모의평가+개별지도+개별 과제검사
+                    </span>
+                  </div>
                   <div className="class-schedule-time">목요일 20:00~22:00</div>
                 </div>
               </div>
