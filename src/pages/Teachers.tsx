@@ -119,12 +119,12 @@ const Teachers: React.FC = () => {
 
                     <div className="stats-grid">
                         <div className="stat-card fade-in-up">
-                            <div className="stat-number">7년</div>
+                            <div className="stat-number">8년</div>
                             <div className="stat-label">연속 대치동 1위</div>
                         </div>
                         <div className="stat-card fade-in-up" style={{ animationDelay: '0.2s' }}>
-                            <div className="stat-number">3명</div>
-                            <div className="stat-label">전문 강사진</div>
+                            <div className="stat-number">1,596명</div>
+                            <div className="stat-label">누적 합격생</div>
                         </div>
                         <div className="stat-card fade-in-up" style={{ animationDelay: '0.4s' }}>
                             <div className="stat-number">100%</div>

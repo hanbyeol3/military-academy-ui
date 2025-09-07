@@ -20,7 +20,7 @@ const Header: React.FC = () => {
   const menuItems = [
     { name: '강사진 소개', path: '/teachers' },
     { name: '인강 안내', path: '/online' },
-    { name: '현장 강의', path: '/offline' },
+    { name: '현강 안내', path: '/offline' },
   ];
 
   const isActive = (path: string) => location.pathname === path;

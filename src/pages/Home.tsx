@@ -86,17 +86,17 @@ const Home: React.FC = () => {
               <span className="char">대성마이맥 경찰사관 인강 강사진은,</span>
               <br />
               <span className="char">단언컨대, </span>
-              <span className="char highlight">경찰사관 인터넷강의 No.1 입니다</span>
+              <span className="char highlight">경찰사관 No.1 입니다</span>
             </span>
           </h1>
           <p className="hero-subtitle">
             <span className="mobile-only">
-              7년 연속 대치동 수강생 수 1위를<br />
+              8년 연속 대치동 수강생 수 1위를<br />
               자랑하는 검증된 전문 강사진과 함께<br />
               경찰사관학교의 꿈을 실현하세요
             </span>
             <span className="desktop-only">
-              7년 연속 대치동 수강생 수 1위를 자랑하는 검증된 전문 강사진과 함께
+              8년 연속 대치동 수강생 수 1위를 자랑하는 검증된 전문 강사진과 함께
               <br />경찰사관학교의 꿈을 실현하세요
             </span>
           </p>
@@ -105,10 +105,10 @@ const Home: React.FC = () => {
               강사진 소개
             </a>
             <a href="/online" className="btn btn-secondary btn-lg">
-              인강 안내
+              대성 인강 안내
             </a>
             <a href="/offline" className="btn btn-outline btn-lg">
-              현장 강의 안내
+              대치동 현강 안내
             </a>
           </div>
         </div>

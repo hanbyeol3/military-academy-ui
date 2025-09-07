@@ -13,12 +13,12 @@ const Offline: React.FC = () => {
               대성마이맥 경찰사관<br />
               강사진의 현장강의는,<br />
               <br />
-              <span className="highlight">7년 연속 대치동 수강생 수<br />
+              <span className="highlight">8년 연속 대치동 수강생 수<br />
               1위를 자랑합니다</span>
             </span>
             <span className="desktop-only">
               대성마이맥 경찰사관 강사진의 현장강의는,<br />
-              <span className="highlight">7년 연속 대치동 수강생 수 1위를 자랑합니다</span>
+              <span className="highlight">8년 연속 대치동 수강생 수 1위를 자랑합니다</span>
             </span>
           </h1>
 
@@ -91,7 +91,7 @@ const Offline: React.FC = () => {
             </div>
             <div className="contact-item-simple">
               <Phone className="contact-icon-simple" />
-              <span>수업 관련 문의: 02-556-2700</span>
+              <span>수업 관련 문의: 두각학원 02-556-2700</span>
             </div>
           </div>
         </div>
@@ -165,7 +165,7 @@ const Offline: React.FC = () => {
               <div className="feature-content">
                 <div className="feature-list">
                   <div className="feature-item">
-                    검증된 대성마이맥 경찰, 사관 국영수 입강 강사진 <br/>(6년연속 대치동 수강생 수 1위)
+                    검증된 대성마이맥 경찰, 사관 국영수 인강 강사진 <br/>(8년연속 대치동 수강생 수 1위)
                   </div>
                   <div className="feature-item">
                       전문적인 컨텐츠 <br/>(기출문제집, 자체교재, 자체 모의고사, 기타 대성Contents)
@@ -197,13 +197,13 @@ const Offline: React.FC = () => {
 
           <p className="cta-description">
             <span className="mobile-only">
-              7년 연속 대치동 1위의 노하우가 집약된<br />
+              8년 연속 대치동 1위의 노하우가 집약된<br />
               현장 강의를 지금 바로 신청하세요.<br />
               전문 강사진과 함께하는 체계적인 학습으로<br />
               합격의 꿈을 이루어보세요.
             </span>
             <span className="desktop-only">
-              7년 연속 대치동 1위의 노하우가 집약된 현장 강의를 지금 바로 신청하세요.<br/>
+              8년 연속 대치동 1위의 노하우가 집약된 현장 강의를 지금 바로 신청하세요.<br/>
               전문 강사진과 함께하는 체계적인 학습으로 합격의 꿈을 이루어보세요.
             </span>
           </p>
@@ -217,7 +217,7 @@ const Offline: React.FC = () => {
                   02-556-2700
                 </span>
                 <span className="desktop-only">
-                  수업문의: 02-556-2700
+                  수업문의: 두각학원 02-556-2700
                 </span>
               </span>
             </div>

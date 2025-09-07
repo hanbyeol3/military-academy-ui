@@ -26,7 +26,7 @@ const Footer: React.FC = () => {
                             전문성과 체계성
                         </h3>
                         <p className="footer-section-text">
-                            7년 연속 대치동 수강생 수 1위를 자랑하는<br />
+                            8년 연속 대치동 수강생 수 1위를 자랑하는<br />
                             검증된 전문 강사진과 함께합니다
                         </p>
                     </div>
