@@ -4,6 +4,7 @@ import { BrowserRouter as Router } from 'react-router-dom';
 // Components
 import Header from './components/common/Header';
 import Footer from './components/common/Footer';
+import ScrollToTop from './components/ScrollToTop';
 import AppRoutes from './routes';
 
 // Styles
@@ -20,6 +21,7 @@ const App: React.FC = () => {
         </div>
 
         <div className="app-content">
+          <ScrollToTop />
           <Header />
           
           <main className="main-content">
