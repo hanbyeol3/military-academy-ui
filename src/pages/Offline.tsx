@@ -7,6 +7,8 @@ const Offline: React.FC = () => {
     <div className="offline">
       {/* Hero Section */}
       <section className="offline-hero">
+        <div className="offline-hero-bg"></div>
+        <div className="offline-hero-image"></div>
         <div className="offline-hero-content">
           <h1 className="offline-title">
             <span className="mobile-only">
@@ -186,6 +188,34 @@ const Offline: React.FC = () => {
       {/* Registration CTA Section */}
       <section className="cta-section">
         <div className="cta-container">
+          <div className="youtube-preview">
+            <div className="youtube-embed">
+              <div className="youtube-thumbnail">
+                <img 
+                  src="https://img.youtube.com/vi/K_9pnudj1VA/maxresdefault.jpg"
+                  alt="대치동 사관학교 수업 모습"
+                  className="thumbnail-image"
+                />
+                <div className="play-button">
+                  <svg viewBox="0 0 68 48" className="play-icon">
+                    <path d="M66.52,7.74c-0.78-2.93-2.49-5.41-5.42-6.19C55.79,.13,34,0,34,0S12.21,.13,6.9,1.55 C3.97,2.33,2.27,4.81,1.48,7.74C0.06,13.05,0,24,0,24s0.06,10.95,1.48,16.26c0.78,2.93,2.49,5.41,5.42,6.19 C12.21,47.87,34,48,34,48s21.79-0.13,27.1-1.55c2.93-0.78,4.64-3.26,5.42-6.19C67.94,34.95,68,24,68,24S67.94,13.05,66.52,7.74z" fill="#f00"></path>
+                    <path d="M 45,24 27,14 27,34" fill="#fff"></path>
+                  </svg>
+                </div>
+                <a
+                  href="https://youtube.com/watch?v=K_9pnudj1VA&si=ImZLRuCZBXrCIzPV"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="youtube-overlay"
+                >
+                  {/*<span className="video-title">*/}
+                  {/*  🔥수강생100명🔥대치동 사관학교+수능 1타강의 수업모습은 어떨까?*/}
+                  {/*</span>*/}
+                </a>
+              </div>
+            </div>
+          </div>
+
           <a
             href="https://dugak.net/TimeTable?tid=41&mid=256"
             target="_blank"
