@@ -2,8 +2,7 @@ import React, { useState, useEffect } from 'react';
 import './Home.css';
 
 const Home: React.FC = () => {
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
-  const [currentSlide, setCurrentSlide] = useState(0);
+  const [_currentSlide, setCurrentSlide] = useState(0);
 
   const slides = [
     {
