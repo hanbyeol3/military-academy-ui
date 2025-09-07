@@ -1,5 +1,5 @@
 import React from 'react';
-import { Clock, MapPin, Phone, Users, Award, BookOpen } from 'lucide-react';
+import { MapPin, Phone, Users, Award } from 'lucide-react';
 import './Offline.css';
 
 const Offline: React.FC = () => {

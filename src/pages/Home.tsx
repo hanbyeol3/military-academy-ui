@@ -1,10 +1,9 @@
 import React, { useState, useEffect } from 'react';
-import { ChevronLeft, ChevronRight } from 'lucide-react';
 import './Home.css';
 
 const Home: React.FC = () => {
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const [currentSlide, setCurrentSlide] = useState(0);
-  const [progress, setProgress] = useState(0);
 
   const slides = [
     {
@@ -25,25 +24,10 @@ const Home: React.FC = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentSlide((prev) => (prev + 1) % slides.length);
-      setProgress(0);
     }, 5000);
 
     return () => clearInterval(interval);
   }, [slides.length]);
-
-  // 프로그레스 바
-  useEffect(() => {
-    const progressInterval = setInterval(() => {
-      setProgress((prev) => {
-        if (prev >= 100) {
-          return 0;
-        }
-        return prev + 2;
-      });
-    }, 100);
-
-    return () => clearInterval(progressInterval);
-  }, [currentSlide]);
 
   // const goToSlide = (index: number) => {
   //   setCurrentSlide(index);
