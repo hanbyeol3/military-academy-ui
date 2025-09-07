@@ -67,15 +67,38 @@ const Online: React.FC = () => {
       <section className="online-hero">
         <div className="online-hero-content fade-in-up">
           <h1 className="online-title">
-            대성마이맥 경찰사관 인강 강사진은,<br />
-            <span className="highlight">단언컨대, <span className="mobile-break"></span>경찰사관 인터넷강의 No.1입니다</span>
+            <span className="mobile-only">
+              대성마이맥 경찰사관<br />
+              인강 강사진은,<br />
+              <br />
+              <span className="highlight">단언컨대, 경찰사관<br />
+              인터넷강의 No.1입니다</span>
+            </span>
+            <span className="desktop-only">
+              대성마이맥 경찰사관 인강 강사진은,<br />
+              <span className="highlight">단언컨대, 경찰사관 인터넷강의 No.1입니다</span>
+            </span>
           </h1>
           <p className="online-subtitle">
-              각 강사의 전문성과 노하우가 집약된 체계적인 온라인 강의로 <br/>
+            <span className="mobile-only">
+              각 강사의 전문성과 노하우가<br />
+              집약된 체계적인 온라인 강의로<br />
+              경찰사관학교 합격의 꿈을<br />
+              이루어보세요
+            </span>
+            <span className="desktop-only">
+              각 강사의 전문성과 노하우가 집약된 체계적인 온라인 강의로<br/>
               경찰사관학교 합격의 꿈을 이루어보세요
+            </span>
           </p>
           <p className="online-notice">
-            ( 각 강사를 클릭하면 강사 인강 페이지로 이동합니다 )
+            <span className="mobile-only">
+              ( 각 강사를 클릭하면<br />
+              강사 인강 페이지로 이동합니다 )
+            </span>
+            <span className="desktop-only">
+              ( 각 강사를 클릭하면 강사 인강 페이지로 이동합니다 )
+            </span>
           </p>
         </div>
       </section>
@@ -145,11 +168,25 @@ const Online: React.FC = () => {
       <section className="online-cta">
         <div className="cta-container">
           <h2 className="cta-title fade-in-up">
-            지금 바로 시작하세요
+            <span className="mobile-only">
+              지금<br />
+              바로 시작하세요
+            </span>
+            <span className="desktop-only">
+              지금 바로 시작하세요
+            </span>
           </h2>
           <p className="cta-description fade-in-up">
-            경찰사관학교 합격의 첫걸음을 대성마이맥 전문 강사진과 함께 내딛어보세요.<br/>
-            체계적인 온라인 학습 시스템으로 효율적인 학습이 가능합니다.
+            <span className="mobile-only">
+              경찰사관학교 합격의 첫걸음을<br />
+              대성마이맥 전문 강사진과 함께 내딛어보세요.<br />
+              체계적인 온라인 학습 시스템으로<br />
+              효율적인 학습이 가능합니다.
+            </span>
+            <span className="desktop-only">
+              경찰사관학교 합격의 첫걸음을 대성마이맥 전문 강사진과 함께 내딛어보세요.<br/>
+              체계적인 온라인 학습 시스템으로 효율적인 학습이 가능합니다.
+            </span>
           </p>
 
           <div className="cta-card fade-in-up">
@@ -157,8 +194,15 @@ const Online: React.FC = () => {
               📞 문의 및 상담
             </p>
             <p className="cta-card-text">
-              인강 수강에 대한 자세한 문의는 대성마이맥 홈페이지를 방문하시거나 <br/>
-              각 강사 페이지에서 확인하실 수 있습니다.
+              <span className="mobile-only">
+                인강 수강에 대한 자세한 문의는<br />
+                대성마이맥 홈페이지를 방문하시거나<br />
+                각 강사 페이지에서 확인하실 수 있습니다.
+              </span>
+              <span className="desktop-only">
+                인강 수강에 대한 자세한 문의는 대성마이맥 홈페이지를 방문하시거나 <br/>
+                각 강사 페이지에서 확인하실 수 있습니다.
+              </span>
             </p>
           </div>
         </div>

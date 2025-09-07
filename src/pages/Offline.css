@@ -57,6 +57,7 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+  text-shadow: 0 0 20px rgba(110, 250, 204, 0.3);
 }
 
 /* 반응형 표시/숨김 */
@@ -157,7 +158,13 @@
 
 /* Schedule Section */
 .schedule-section {
-  padding: 2rem 0 2rem 0;
+  padding: 1rem 0 3rem 0;
+}
+
+@media (min-width: 768px) {
+  .schedule-section {
+    padding: 3rem 0 4rem 0;
+  }
 }
 
 .schedule-container {
@@ -167,14 +174,38 @@
 }
 
 .section-title {
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-weight: 700;
   text-align: center;
-  margin-bottom: 1rem;
-  background: linear-gradient(135deg, #6EFACC 0%, #9E7BFF 100%);
+  line-height: 1.3;
+  margin-bottom: 2.5rem;
+  color: #ffffff;
+  position: relative;
+  padding: 1.5rem 2rem;
+  background: rgba(11, 15, 20, 0.9);
+  border: 2px solid rgba(255, 99, 99, 0.4);
+  border-radius: 1rem;
+  backdrop-filter: blur(15px);
+  box-shadow: 0 8px 32px rgba(255, 99, 99, 0.15);
+}
+
+.section-title::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #FF6B6B, #FF8E8E, #FF6B6B);
+  border-radius: 1rem 1rem 0 0;
+}
+
+.section-title .highlight {
+  background: linear-gradient(135deg, #FF6B6B 0%, #FF8E8E 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+  text-shadow: 0 0 20px rgba(255, 107, 107, 0.4);
 }
 
 @media (min-width: 768px) {
@@ -183,15 +214,27 @@
   }
 }
 
+@media (min-width: 1024px) {
+  .section-title {
+    font-size: 3rem;
+  }
+}
+
 .schedule-subtitle {
   font-size: 1.25rem;
   color: #B8B8B8;
   text-align: center;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
   line-height: 1.6;
   max-width: 800px;
   margin-left: auto;
   margin-right: auto;
+}
+
+@media (min-width: 768px) {
+  .schedule-subtitle {
+    margin-bottom: 3rem;
+  }
 }
 
 .schedule-grid {
@@ -380,8 +423,16 @@
 
 .contact-item {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  gap: 5rem;
+  gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .contact-item {
+    flex-direction: row;
+    gap: 5rem;
+  }
 }
 
 .contact-inner-item {
@@ -402,7 +453,13 @@
 
 /* Features Section */
 .features-section {
-  padding: 3rem 0;
+  padding: 2rem 0;
+}
+
+@media (min-width: 768px) {
+  .features-section {
+    padding: 4rem 0;
+  }
 }
 
 .features-container {
@@ -490,8 +547,14 @@
 
 /* Registration CTA Section */
 .cta-section {
-  padding: 3rem 0;
+  padding: 2rem 0 3rem 0;
   text-align: center;
+}
+
+@media (min-width: 768px) {
+  .cta-section {
+    padding: 4rem 0;
+  }
 }
 
 .cta-container {

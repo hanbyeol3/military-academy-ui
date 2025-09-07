@@ -75,14 +75,30 @@ const Home: React.FC = () => {
         </div>
         <div className="hero-content fade-in-up">
           <h1 className="hero-title">
-            <span className="char">대성마이맥 경찰사관 인강 강사진은,</span>
-            <br />
-            <span className="char">단언컨대, </span>
-            <span className="char highlight">경찰사관 인터넷강의 No.1 입니다</span>
+            <span className="mobile-only">
+              대성마이맥 경찰사관<br />
+              인강 강사진은,<br />
+              단언컨대<br />
+              경찰사관<br />
+              <span className="highlight">인터넷강의 No.1 입니다</span>
+            </span>
+            <span className="desktop-only">
+              <span className="char">대성마이맥 경찰사관 인강 강사진은,</span>
+              <br />
+              <span className="char">단언컨대, </span>
+              <span className="char highlight">경찰사관 인터넷강의 No.1 입니다</span>
+            </span>
           </h1>
           <p className="hero-subtitle">
-            7년 연속 대치동 수강생 수 1위를 자랑하는 검증된 전문 강사진과 함께
+            <span className="mobile-only">
+              7년 연속 대치동 수강생 수 1위를<br />
+              자랑하는 검증된 전문 강사진과 함께<br />
+              경찰사관학교의 꿈을 실현하세요
+            </span>
+            <span className="desktop-only">
+              7년 연속 대치동 수강생 수 1위를 자랑하는 검증된 전문 강사진과 함께
               <br />경찰사관학교의 꿈을 실현하세요
+            </span>
           </p>
           <div className="hero-cta">
             <a href="/teachers" className="btn btn-primary btn-lg">

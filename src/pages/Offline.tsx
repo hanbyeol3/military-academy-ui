@@ -9,17 +9,26 @@ const Offline: React.FC = () => {
       <section className="offline-hero">
         <div className="offline-hero-content">
           <h1 className="offline-title">
-            <span className="mobile-only">대성마이맥 경찰사관<br />현장강의 강사진은,<br /><span className="highlight">단언컨대, 현장강의<br />No.1입니다</span></span>
-            <span className="desktop-only">대성마이맥 경찰사관 현장강의 강사진은,<br /><span className="highlight">단언컨대, 현장강의 No.1입니다</span></span>
+            <span className="mobile-only">
+              대성마이맥 경찰사관 강사진의<br />
+              현장강의는, <span className="highlight">7년 연속 대치동 수강생 수<br />
+              1위를 자랑합니다</span>
+            </span>
+            <span className="desktop-only">
+              대성마이맥 경찰사관 강사진의 현장강의는,<br />
+              <span className="highlight">7년 연속 대치동 수강생 수 1위를 자랑합니다</span>
+            </span>
           </h1>
 
           <h2 className="offline-subtitle">
-            대성마이맥 경찰사관 강사진의 현장강의는,<br />
-            7년 연속 대치동 수강생 수 1위를 자랑합니다
+            <span className="mobile-only">
+              직접 만나는 현장 강의의 생생함과<br />
+              체계적인 학습 관리 시스템
+            </span>
+            <span className="desktop-only">
+              직접 만나는 현장 강의의 생생함과 체계적인 학습 관리 시스템
+            </span>
           </h2>
-          <p className="offline-description">
-            직접 만나는 현장 강의의 생생함과 체계적인 학습 관리 시스템
-          </p>
         </div>
       </section>
 
@@ -28,10 +37,23 @@ const Offline: React.FC = () => {
       <section className="schedule-section">
         <div className="schedule-container">
           <h2 className="section-title">
-            대치두각학원 현장강의 수업 안내
+            <span className="mobile-only">
+              <span className="highlight">대치두각학원 현장강의<br />
+              수업 안내</span>
+            </span>
+            <span className="desktop-only">
+              <span className="highlight">대치두각학원 현장강의 수업 안내</span>
+            </span>
           </h2>
           <p className="schedule-subtitle">
-            체계적인 학습 관리와 전문 강사진의 현장 지도로 합격의 꿈을 실현하세요
+            <span className="mobile-only">
+              체계적인 학습 관리와<br />
+              전문 강사진의 현장 지도로<br />
+              합격의 꿈을 실현하세요
+            </span>
+            <span className="desktop-only">
+              체계적인 학습 관리와 전문 강사진의 현장 지도로 합격의 꿈을 실현하세요
+            </span>
           </p>
 
           <div className="schedule-grid">
@@ -43,7 +65,7 @@ const Offline: React.FC = () => {
                   사관학교 정규수업반
                 </h3>
               </div>
-              
+
               <div className="price-info">
                 <p className="price-text">
                   수강료: 4주기준 과목별 28만원<br />
@@ -83,7 +105,7 @@ const Offline: React.FC = () => {
                   사관학교 클리닉반
                 </h3>
               </div>
-              
+
               <div className="price-info clinic">
                 <p className="price-text clinic">
                   수강료: 4주기준 과목별 10만원<br />
@@ -121,14 +143,18 @@ const Offline: React.FC = () => {
             <div className="contact-card">
               <div className="contact-details">
                 <div className="contact-item">
-                    <div className="contact-inner-item">
-                      <MapPin className="contact-icon" />
-                      <span className="contact-text">수업장소: 대치두각학원 S관</span>
-                    </div>
-                    <div className="contact-inner-item">
-                      <Phone className="contact-icon" />
-                      <span className="contact-text">문의: 02-556-2700</span>
-                    </div>
+                  <div className="contact-inner-item">
+                    <MapPin className="contact-icon" />
+                    <span className="contact-text">
+                      수업장소: 대치두각학원 S관
+                    </span>
+                  </div>
+                  <div className="contact-inner-item">
+                    <Phone className="contact-icon" />
+                    <span className="contact-text">
+                      문의: 02-556-2700
+                    </span>
+                  </div>
                 </div>
                 {/*<div className="contact-item">*/}
                 {/*  <Phone className="contact-icon" />*/}
@@ -144,7 +170,13 @@ const Offline: React.FC = () => {
       <section className="features-section">
         <div className="schedule-container">
           <h2 className="section-title">
-            대치두각학원 현장강의 특장점
+            <span className="mobile-only">
+              <span className="highlight">대치두각학원 현장강의<br />
+              특장점</span>
+            </span>
+            <span className="desktop-only">
+              <span className="highlight">대치두각학원 현장강의 특장점</span>
+            </span>
           </h2>
 
           {/* Feature Cards */}
@@ -154,7 +186,14 @@ const Offline: React.FC = () => {
               <div className="feature-header">
                 <Award className="card-icon" />
                 <h3 className="feature-title">
-                  마스터팀의 '경찰사관 결사대' 현장강의는 이렇게 다릅니다.
+                  <span className="mobile-only">
+                    마스터팀의 '경찰사관 결사대'<br />
+                    현장강의는 이렇게 다릅니다.
+                  </span>
+                  <span className="desktop-only">
+                    마스터팀의 '경찰사관 결사대'<br />
+                    현장강의는 이렇게 다릅니다.
+                  </span>
                 </h3>
               </div>
               <div className="feature-content">
@@ -180,7 +219,14 @@ const Offline: React.FC = () => {
               <div className="feature-header">
                 <Users className="card-icon purple" />
                 <h3 className="feature-title purple">
-                  특화된 학습관리 시스템
+                  <span className="mobile-only">
+                    특화된<br />
+                    학습관리 시스템
+                  </span>
+                  <span className="desktop-only">
+                    특화된<br />
+                    학습관리 시스템
+                  </span>
                 </h3>
               </div>
               <div className="feature-content">
@@ -209,15 +255,30 @@ const Offline: React.FC = () => {
           </a>
 
           <p className="cta-description">
-            7년 연속 대치동 1위의 노하우가 집약된 현장 강의를 지금 바로 신청하세요. <br/>
-            전문 강사진과 함께하는 체계적인 학습으로 합격의 꿈을 이루어보세요.
+            <span className="mobile-only">
+              7년 연속 대치동 1위의 노하우가 집약된<br />
+              현장 강의를 지금 바로 신청하세요.<br />
+              전문 강사진과 함께하는 체계적인 학습으로<br />
+              합격의 꿈을 이루어보세요.
+            </span>
+            <span className="desktop-only">
+              7년 연속 대치동 1위의 노하우가 집약된 현장 강의를 지금 바로 신청하세요.<br/>
+              전문 강사진과 함께하는 체계적인 학습으로 합격의 꿈을 이루어보세요.
+            </span>
           </p>
 
           <div className="cta-contact">
             <div className="cta-contact-info">
               <Phone className="contact-icon" />
-              <span className="contact-text">수업 문의:</span>
-              <span className="cta-phone">02-556-2700</span>
+              <span className="contact-text">
+                <span className="mobile-only">
+                  수업문의<br />
+                  02-556-2700
+                </span>
+                <span className="desktop-only">
+                  수업문의: 02-556-2700
+                </span>
+              </span>
             </div>
             <p className="cta-note">
               궁금한 점이 있으시면 언제든지 전화 문의해주세요

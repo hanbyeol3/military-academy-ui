@@ -108,7 +108,13 @@ const Teachers: React.FC = () => {
             <section className="teachers-stats">
                 <div className="stats-container">
                     <h2 className="stats-title">
-                        숫자로 보는 우리의 성과
+                        <span className="mobile-only">
+                            숫자로 보는<br />
+                            우리의 성과
+                        </span>
+                        <span className="desktop-only">
+                            숫자로 보는 우리의 성과
+                        </span>
                     </h2>
 
                     <div className="stats-grid">
