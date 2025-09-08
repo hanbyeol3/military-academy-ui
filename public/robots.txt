@@ -1,0 +1,6 @@
+# 모든 검색엔진이 사이트 전체를 크롤링하도록 허용
+User-agent: *
+Allow: /
+
+# 사이트맵 위치 지정
+Sitemap: https://masterteam.co.kr/sitemap.xml
