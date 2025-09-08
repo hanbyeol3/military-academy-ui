@@ -7,7 +7,8 @@
       "Bash(./node_modules/.bin/tailwindcss:*)",
       "Bash(npm run dev:*)",
       "Bash(npm run build:*)",
-      "Bash(find:*)"
+      "Bash(find:*)",
+      "Read(/Users/hanbyeol/Project/MyHealthWayDemostration/military-academy-ui /**)"
     ],
     "deny": [],
     "ask": []
